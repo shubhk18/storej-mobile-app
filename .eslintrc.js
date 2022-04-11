@@ -25,11 +25,11 @@ module.exports = {
 		"react",
 		"@typescript-eslint",
 		"react-native",
-		"prettier", 
-		"jest", 
+		"prettier",
+		"jest",
 		"testing-library"
 	],
-	ignorePatterns: ['.eslintrc.js', 'dist', 'babel.config.js', 'metro.config.js'],
+	ignorePatterns: ['.eslintrc.js', 'dist', '*.config.js'],
 	"rules": {
 		"indent": [
 			"error",

@@ -1,18 +1,20 @@
 import React from "react";
-import {
-	Text,
-	useColorScheme,
-	View,
-} from "react-native";
+import {Button, Icon} from "react-native-magnus";
 import * as S from "./App.styles";
+import {SafeAreaView} from "react-native";
+import { Text } from "react-native";
 
 const App = () => {
-	const isDarkMode = useColorScheme() === "dark";
-
 	return (
-		<S.AppWrapper>
-			<View><Text>StoreJ Mobile App</Text></View>
-		</S.AppWrapper>
+		<SafeAreaView>
+			<S.AppWrapper>
+				<S.Header>My Header</S.Header>
+				<Text>My Normal Header</Text>
+				<Button bg="blue500" h={40} w={40} rounded="circle">
+					<Icon name="like1" color="white" />
+				</Button>
+			</S.AppWrapper>
+		</SafeAreaView>
 	);
 };
 
